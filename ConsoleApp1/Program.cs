@@ -1,12 +1,22 @@
 ﻿using System;
+using static System.Console;
 
-namespace ConsoleApp1
+
+namespace ContactWriter
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Contact Cody = new Contact
+            {
+                FirstName = "Cody",
+                AgeInYears = 20
+            };
+
+            var CodyWriter = new ContactConsoleWriter(Cody);
+            CodyWriter.Write();
+             
         }
     }
 }
