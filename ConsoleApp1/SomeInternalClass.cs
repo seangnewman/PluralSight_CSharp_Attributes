@@ -1,0 +1,6 @@
+﻿namespace ContactWriter
+{
+    class SomeInternalClass
+    {
+    }
+}
